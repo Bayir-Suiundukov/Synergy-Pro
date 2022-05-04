@@ -14,7 +14,7 @@
 
     <body class="font-sans antialiased">
       <div class="basis-full bg-fixed bg-cover bg-no-repeat h-screen " style="background-image: url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)" >
-               <div class="backdrop-blur-sm backdrop-brightness-50 w-full h-full">
+               <div class="backdrop-blur-sm backdrop-brightness-50 h-full">
                 @yield('content')
         </div>
       </div>

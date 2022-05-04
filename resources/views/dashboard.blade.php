@@ -25,13 +25,13 @@
                  </form>
            </div>
 
-                  <div class="flex justify-center">
-                    <div class="w-96 whitespace-normal">
+           <div class="flex justify-center flex-wrap">
+                    <div class="w-96">
 
                              <!-- Информация -->
-                             <div class="w-96">
 
-                                      <div class="w-96 whitespace-normal bg-white px-3 py-3 mt-32 border shadow-2xl shadow-blue-500/50 rounded-lg opacity-90 border-4 border-blue-700 h-fit">
+
+                                      <div class="bg-white px-3 py-3 mt-32 shadow-2xl shadow-blue-500/50 rounded-lg opacity-90 border-4 border-blue-700 break-all h-fit">
                                                                         <!-- Голова -->
                                                                         <div class="flex justify-between">
                                                                                  <label class="text-lg font-semibold"> Данные пользователя </label>
@@ -39,9 +39,9 @@
                                                                         </div>
 
                                                                          <!-- Вся информация-->
-                                                                        <div class="mt-3 min-w-96">
+                                                                        <div class="mt-3">
                                                                                  <!-- имя и фамилия-->
-                                                                                 <div class="flex flex-row">
+                                                                                 <div class="flex flex-row flex-wrap ">
 
                                                                                           <div class=" mx-2 mb-6">
                                                                                                   <!-- имя-->
@@ -67,14 +67,14 @@
                                                                                          <span class="text-lg border-gray-400 border-b-2">{{ Auth::user()->number }}</span><br/>
                                                                                 </div>
                                                                                 <!-- о себе -->
-                                                                                <div class="whitespace-normal mx-2 mb-4 mt-6">
+                                                                                <div class="mx-2 mb-4 mt-6">
                                                                                          <label class="text-sm">О себе</label><br/>
-                                                                                         <p class="text-lg border-gray-400 border-b-2">{{ Auth::user()->aboutme }}@if(Auth::user()->aboutme === NULL)<span class="animate-pulse opacity-80">Напишите о себе)))</span>@endif</p>
+                                                                                        <p class="text-lg border-gray-400 border-b-2">{{ Auth::user()->aboutme }}@if(Auth::user()->aboutme === NULL)<span class="animate-pulse opacity-80">Напишите о себе)))</span>@endif</p>
                                                                                 </div>
 
                                                                         </div>
                                       </div>
-                             </div>
+
 
 
                            <!-- Ссылки -->
@@ -93,6 +93,6 @@
                                     </div>
                            </div>
                     </div>
-                  </div>
+           </div>
 
 @endsection
